@@ -5,7 +5,7 @@ cd build
 cmake ..
 make
 cd ..
-opt -load build/funcblockcount/*.so -funcblockcount demo.ll
+opt -load build/funcblockcount/*.so -funcblockcount test.ll
 
 
 查看funcblockcount/funcblockcount/FuncBlockCount.cpp 了解Pass代码基本结构
