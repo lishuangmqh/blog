@@ -2,6 +2,13 @@
 
 yum install wget gcc gcc-c++ make zlib-devel perl python-devel ncurses-devel swig -y
 
+wget https://cmake.org/files/v3.12/cmake-3.12.3.tar.gz
+tar -zxvf cmake-3.12.3.tar.gz
+cd cmake-3.12.3
+./bootstrap --prefix=/usr/local
+make
+make install
+
 wget http://releases.llvm.org/6.0.1/llvm-6.0.1.src.tar.xz
 wget http://releases.llvm.org/6.0.1/cfe-6.0.1.src.tar.xz
 
