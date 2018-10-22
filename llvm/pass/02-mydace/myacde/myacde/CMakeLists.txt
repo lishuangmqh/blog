@@ -1,6 +1,6 @@
 add_library(MYADCE MODULE
     # List your source files here.
-    MYADCE.cpp
+    MyAcde.cpp
 )
 
 # Use C++11 to compile our pass (i.e., supply -std=c++11).
