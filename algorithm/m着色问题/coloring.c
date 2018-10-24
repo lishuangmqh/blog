@@ -1,5 +1,7 @@
 #include <stdio.h>    
 #include <math.h>
+#include <stdbool.h>
+
 #define n 5
 #define m 4 //颜色数
 
