@@ -24,7 +24,8 @@ int color[n+1]={0};
 // 是否可以涂颜色
 bool ok(int x){
 	// 循环遍历所有顶点
-    for(int i=1; i<=n; i++){
+    int i;
+    for(i = 1; i <= n; i++){
     	// 如果点相邻 且 颜色相同
         if(a[x][i]==1 && color[x]==color[i]){//不能为1，不重复
             return false;
@@ -39,7 +40,8 @@ void dfs(int t){
         count++;
     }else{
     	// 循环所有的颜色
-        for(int i=1; i<=m; i++){
+	int i;
+        for(i=1; i<=m; i++){
         	// 将定点t着色成 i
             color[t]=i;
             // 如果可以继续往下一个顶点涂，就继续调用dfs涂下一个顶点 (t+1)
